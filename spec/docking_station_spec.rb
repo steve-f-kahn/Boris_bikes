@@ -1,6 +1,9 @@
-require "DockingStation"
+require "DockingStation.rb"
+
 describe DockingStation do
-  it "releases a bike" do
-    expect(release_bike).to eq(true)
-  end
+  it { should release_bike be_empty}
+
+  #"releases a bike" do
+  #   DockingStation.new.release_bike.should == true
+  # end
 end
